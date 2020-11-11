@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F6356ED8BA87653232257B /* Pods_ConcussionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5039BAF906410312A2FF5F34 /* Pods_ConcussionTests.framework */; };
+		5620FA24B48616BCD7F483C7 /* Pods_Concussion_ConcussionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */; };
+		7B5939EC118F99CD4B03AC71 /* Pods_Concussion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */; };
+		C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765BF255A1FC600BABF84 /* LitCardView.swift */; };
+		C70765C8255B2F8F00BABF84 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765C7255B2F8F00BABF84 /* AppointmentView.swift */; };
+		C70765CE255B42AB00BABF84 /* Lit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765CD255B42AB00BABF84 /* Lit.swift */; };
+		C70765D6255B454100BABF84 /* LitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765D5255B454100BABF84 /* LitView.swift */; };
+		C70765DB255B4EE000BABF84 /* GlanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765DA255B4EE000BABF84 /* GlanceView.swift */; };
+		C7778AEA25511222000892B8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AE925511222000892B8 /* Login.swift */; };
+		C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AF125511296000892B8 /* LoginViewModel.swift */; };
 		C7BB07E4254921E7007C0608 /* ConcussionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07E3254921E7007C0608 /* ConcussionApp.swift */; };
 		C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07E5254921E7007C0608 /* ContentView.swift */; };
 		C7BB07E8254921E9007C0608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BB07E7254921E9007C0608 /* Assets.xcassets */; };
@@ -15,6 +25,7 @@
 		C7BB07F0254921E9007C0608 /* Concussion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07EE254921E9007C0608 /* Concussion.xcdatamodeld */; };
 		C7BB07FB254921E9007C0608 /* ConcussionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07FA254921E9007C0608 /* ConcussionTests.swift */; };
 		C7BB0806254921E9007C0608 /* ConcussionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0805254921E9007C0608 /* ConcussionUITests.swift */; };
+		C7BB081A25492A4E007C0608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7BB081925492A4E007C0608 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4248646D3E589DAA62DA9F60 /* Pods-ConcussionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcussionTests.release.xcconfig"; path = "Target Support Files/Pods-ConcussionTests/Pods-ConcussionTests.release.xcconfig"; sourceTree = "<group>"; };
+		5039BAF906410312A2FF5F34 /* Pods_ConcussionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcussionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53991358BDA82D2FE8D59C2D /* Pods-ConcussionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcussionTests.debug.xcconfig"; path = "Target Support Files/Pods-ConcussionTests/Pods-ConcussionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68AB3CA80225FB70A02CB53E /* Pods-Concussion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion.debug.xcconfig"; path = "Target Support Files/Pods-Concussion/Pods-Concussion.debug.xcconfig"; sourceTree = "<group>"; };
+		C70765BF255A1FC600BABF84 /* LitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitCardView.swift; sourceTree = "<group>"; };
+		C70765C7255B2F8F00BABF84 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
+		C70765CD255B42AB00BABF84 /* Lit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lit.swift; sourceTree = "<group>"; };
+		C70765D5255B454100BABF84 /* LitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitView.swift; sourceTree = "<group>"; };
+		C70765DA255B4EE000BABF84 /* GlanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceView.swift; sourceTree = "<group>"; };
+		C7778AE925511222000892B8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C7778AF125511296000892B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C7BB07E0254921E7007C0608 /* Concussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BB07E3254921E7007C0608 /* ConcussionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcussionApp.swift; sourceTree = "<group>"; };
 		C7BB07E5254921E7007C0608 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +71,12 @@
 		C7BB0801254921E9007C0608 /* ConcussionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcussionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BB0805254921E9007C0608 /* ConcussionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcussionUITests.swift; sourceTree = "<group>"; };
 		C7BB0807254921EA007C0608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7BB081925492A4E007C0608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion-ConcussionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion_ConcussionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AD2CA70B6F807C53408868 /* Pods-Concussion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion.release.xcconfig"; path = "Target Support Files/Pods-Concussion/Pods-Concussion.release.xcconfig"; sourceTree = "<group>"; };
+		FC65BA329C76CB16846846C7 /* Pods-Concussion-ConcussionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion-ConcussionUITests.release.xcconfig"; path = "Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5939EC118F99CD4B03AC71 /* Pods_Concussion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F6356ED8BA87653232257B /* Pods_ConcussionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5620FA24B48616BCD7F483C7 /* Pods_Concussion_ConcussionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646A869C700E598497ECDF2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68AB3CA80225FB70A02CB53E /* Pods-Concussion.debug.xcconfig */,
+				F4AD2CA70B6F807C53408868 /* Pods-Concussion.release.xcconfig */,
+				F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */,
+				FC65BA329C76CB16846846C7 /* Pods-Concussion-ConcussionUITests.release.xcconfig */,
+				53991358BDA82D2FE8D59C2D /* Pods-ConcussionTests.debug.xcconfig */,
+				4248646D3E589DAA62DA9F60 /* Pods-ConcussionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F506E1B474C4A92D09EDFD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */,
+				F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */,
+				5039BAF906410312A2FF5F34 /* Pods_ConcussionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C70765CC255B427A00BABF84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C70765CD255B42AB00BABF84 /* Lit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7778AE725511125000892B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7778AE925511222000892B8 /* Login.swift */,
+				C70765D5255B454100BABF84 /* LitView.swift */,
+				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
+				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
+				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7778AE825511137000892B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7778AF125511296000892B8 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C7BB07D7254921E7007C0608 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +165,8 @@
 				C7BB07F9254921E9007C0608 /* ConcussionTests */,
 				C7BB0804254921E9007C0608 /* ConcussionUITests */,
 				C7BB07E1254921E7007C0608 /* Products */,
+				646A869C700E598497ECDF2C /* Pods */,
+				6F506E1B474C4A92D09EDFD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +183,10 @@
 		C7BB07E2254921E7007C0608 /* Concussion */ = {
 			isa = PBXGroup;
 			children = (
+				C70765CC255B427A00BABF84 /* Model */,
+				C7778AE825511137000892B8 /* ViewModel */,
+				C7778AE725511125000892B8 /* View */,
+				C7BB081925492A4E007C0608 /* GoogleService-Info.plist */,
 				C7BB07E3254921E7007C0608 /* ConcussionApp.swift */,
 				C7BB07E5254921E7007C0608 /* ContentView.swift */,
 				C7BB07E7254921E9007C0608 /* Assets.xcassets */,
@@ -143,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7BB080A254921EA007C0608 /* Build configuration list for PBXNativeTarget "Concussion" */;
 			buildPhases = (
+				2372C211D00CD4F30545AE08 /* [CP] Check Pods Manifest.lock */,
 				C7BB07DC254921E7007C0608 /* Sources */,
 				C7BB07DD254921E7007C0608 /* Frameworks */,
 				C7BB07DE254921E7007C0608 /* Resources */,
+				3F85AB22B7213D545B18CE61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7BB080D254921EA007C0608 /* Build configuration list for PBXNativeTarget "ConcussionTests" */;
 			buildPhases = (
+				2B4759B72FF4269DBB5B6FDC /* [CP] Check Pods Manifest.lock */,
 				C7BB07F2254921E9007C0608 /* Sources */,
 				C7BB07F3254921E9007C0608 /* Frameworks */,
 				C7BB07F4254921E9007C0608 /* Resources */,
@@ -178,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7BB0810254921EA007C0608 /* Build configuration list for PBXNativeTarget "ConcussionUITests" */;
 			buildPhases = (
+				F7C3E0A02ACF6E81C2CCD37C /* [CP] Check Pods Manifest.lock */,
 				C7BB07FD254921E9007C0608 /* Sources */,
 				C7BB07FE254921E9007C0608 /* Frameworks */,
 				C7BB07FF254921E9007C0608 /* Resources */,
+				93AFC8675A4AC45B97A30976 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +334,7 @@
 			files = (
 				C7BB07EB254921E9007C0608 /* Preview Assets.xcassets in Resources */,
 				C7BB07E8254921E9007C0608 /* Assets.xcassets in Resources */,
+				C7BB081A25492A4E007C0608 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +354,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2372C211D00CD4F30545AE08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Concussion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B4759B72FF4269DBB5B6FDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConcussionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F85AB22B7213D545B18CE61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concussion/Pods-Concussion-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concussion/Pods-Concussion-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Concussion/Pods-Concussion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93AFC8675A4AC45B97A30976 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C3E0A02ACF6E81C2CCD37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Concussion-ConcussionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7BB07DC254921E7007C0608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70765CE255B42AB00BABF84 /* Lit.swift in Sources */,
 				C7BB07ED254921E9007C0608 /* Persistence.swift in Sources */,
+				C7778AEA25511222000892B8 /* Login.swift in Sources */,
+				C70765C8255B2F8F00BABF84 /* AppointmentView.swift in Sources */,
+				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
+				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
+				C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */,
 				C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */,
+				C70765DB255B4EE000BABF84 /* GlanceView.swift in Sources */,
 				C7BB07E4254921E7007C0608 /* ConcussionApp.swift in Sources */,
 				C7BB07F0254921E9007C0608 /* Concussion.xcdatamodeld in Sources */,
 			);
@@ -422,11 +626,13 @@
 		};
 		C7BB080B254921EA007C0608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AB3CA80225FB70A02CB53E /* Pods-Concussion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Concussion/Preview Content\"";
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Concussion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -443,11 +649,13 @@
 		};
 		C7BB080C254921EA007C0608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4AD2CA70B6F807C53408868 /* Pods-Concussion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Concussion/Preview Content\"";
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Concussion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -464,10 +672,12 @@
 		};
 		C7BB080E254921EA007C0608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53991358BDA82D2FE8D59C2D /* Pods-ConcussionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				INFOPLIST_FILE = ConcussionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,10 +695,12 @@
 		};
 		C7BB080F254921EA007C0608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4248646D3E589DAA62DA9F60 /* Pods-ConcussionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				INFOPLIST_FILE = ConcussionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,9 +718,11 @@
 		};
 		C7BB0811254921EA007C0608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				INFOPLIST_FILE = ConcussionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,9 +739,11 @@
 		};
 		C7BB0812254921EA007C0608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC65BA329C76CB16846846C7 /* Pods-Concussion-ConcussionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XXC4X2M37;
 				INFOPLIST_FILE = ConcussionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
