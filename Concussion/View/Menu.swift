@@ -46,7 +46,7 @@ struct Menu : View {
             
             Button(action: {}, label: {
                 HStack{
-                    Text("Summary").font(.title2)
+                    Text("Physician Summary").font(.title2)
                     Image(systemName: "doc.text").font(.title2)
                 }.frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
             }).padding(2)

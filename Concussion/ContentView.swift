@@ -9,19 +9,27 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    @State var menu = false
+    
     var body: some View{
-        TabView {
-            Text("Today View")
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Today")
-            }
-            
-            GlanceView(litCards: testData)
-                .tabItem {
-                    Image(systemName: "eyeglasses")
-                    Text("Glance")
+        ZStack{
+            TabView {
+                Text("Today View")
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Today")
                 }
+                
+                GlanceView(showMenu: self.$menu, litCards: testData)
+                    .tabItem {
+                        Image(systemName: "eyeglasses")
+                        Text("Glance")
+                    }
+            }.zIndex(1)
+            
+            Menu(showMenu: self.$menu).offset(x: self.menu ? 45 : 500).zIndex(2)
+            
         }
     }
 }

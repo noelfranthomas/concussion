@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GlanceView: View {
     
-    @State var showMenu = false
+    @Binding var showMenu : Bool
     
     let litCards: [Lit]
     
@@ -64,8 +64,6 @@ struct GlanceView: View {
                 .matchedGeometryEffect(id: selection.id, in: ns)
                 .zIndex(2).blur(radius: self.showMenu ? 10 : 0 )
             }
-            
-            Menu(showMenu: self.$showMenu).offset(x: self.showMenu ? 45 : 500).zIndex(3)
         }
         .edgesIgnoringSafeArea(.all)
     }
