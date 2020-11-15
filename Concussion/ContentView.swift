@@ -10,7 +10,19 @@ import CoreData
 
 struct ContentView: View {
     var body: some View{
-        GlanceView(litCards: testData)
+        TabView {
+            Text("Today View")
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Today")
+            }
+            
+            GlanceView(litCards: testData)
+                .tabItem {
+                    Image(systemName: "eyeglasses")
+                    Text("Glance")
+                }
+        }
     }
 }
 
