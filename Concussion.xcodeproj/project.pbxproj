@@ -26,6 +26,7 @@
 		C7BB07FB254921E9007C0608 /* ConcussionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07FA254921E9007C0608 /* ConcussionTests.swift */; };
 		C7BB0806254921E9007C0608 /* ConcussionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0805254921E9007C0608 /* ConcussionUITests.swift */; };
 		C7BB081A25492A4E007C0608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7BB081925492A4E007C0608 /* GoogleService-Info.plist */; };
+		C7CDBE492560F908006087D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE482560F908006087D2 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C7BB0805254921E9007C0608 /* ConcussionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcussionUITests.swift; sourceTree = "<group>"; };
 		C7BB0807254921EA007C0608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7BB081925492A4E007C0608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7CDBE482560F908006087D2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion-ConcussionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion_ConcussionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,11 +143,9 @@
 		C7778AE725511125000892B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7CDBE432560C533006087D2 /* At a Glance */,
 				C7778AE925511222000892B8 /* Login.swift */,
-				C70765D5255B454100BABF84 /* LitView.swift */,
-				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
-				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
-				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
+				C7CDBE482560F908006087D2 /* Menu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +222,17 @@
 				C7BB0807254921EA007C0608 /* Info.plist */,
 			);
 			path = ConcussionUITests;
+			sourceTree = "<group>";
+		};
+		C7CDBE432560C533006087D2 /* At a Glance */ = {
+			isa = PBXGroup;
+			children = (
+				C70765D5255B454100BABF84 /* LitView.swift */,
+				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
+				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
+				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
+			);
+			name = "At a Glance";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +479,7 @@
 				C70765C8255B2F8F00BABF84 /* AppointmentView.swift in Sources */,
 				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
 				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
+				C7CDBE492560F908006087D2 /* Menu.swift in Sources */,
 				C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */,
 				C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */,
 				C70765DB255B4EE000BABF84 /* GlanceView.swift in Sources */,

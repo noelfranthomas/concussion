@@ -15,7 +15,7 @@ struct ConcussionApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().preferredColorScheme(.dark)
         }
     }
 }

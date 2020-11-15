@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GlanceView: View {
     
+    @State var showMenu = false
+    
     let litCards: [Lit]
     
     @Namespace var ns
@@ -42,15 +44,28 @@ struct GlanceView: View {
                   .buttonStyle(PlainButtonStyle())
               }
               .navigationBarTitle("At a Glance")
+              .toolbar(content: {
+                ToolbarItem {
+                    Button(action: {
+                        withAnimation(.default){
+                            self.showMenu.toggle()
+                        }
+                    }, label: {
+                    Image(systemName: "equal.square")
+                  })
+                }
+              })
             }
-            .zIndex(1)
+            .zIndex(1).blur(radius: self.showMenu ? 10 : 0 )
             
             if let selection = selection {
               LitView(litCard: selection)
                 .onTapGesture { select(nil) }
                 .matchedGeometryEffect(id: selection.id, in: ns)
-                .zIndex(2)
+                .zIndex(2).blur(radius: self.showMenu ? 10 : 0 )
             }
+            
+            Menu(showMenu: self.$showMenu).offset(x: self.showMenu ? 45 : 500).zIndex(3)
         }
         .edgesIgnoringSafeArea(.all)
     }
