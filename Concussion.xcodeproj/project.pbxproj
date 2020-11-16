@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,11 @@
 		C7BB0806254921E9007C0608 /* ConcussionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0805254921E9007C0608 /* ConcussionUITests.swift */; };
 		C7BB081A25492A4E007C0608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7BB081925492A4E007C0608 /* GoogleService-Info.plist */; };
 		C7CDBE492560F908006087D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE482560F908006087D2 /* Menu.swift */; };
+		C7CDBE4E2561BDFB006087D2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE4D2561BDFA006087D2 /* MapView.swift */; };
+		C7CDBE562561C8F7006087D2 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE552561C8F7006087D2 /* TodayView.swift */; };
+		C7CDBE5F2561CDE8006087D2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE5E2561CDE8006087D2 /* Activity.swift */; };
+		C7CDBE642561DFFD006087D2 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE632561DFFD006087D2 /* ActivityView.swift */; };
+		C7CDBE6C2561EB90006087D2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C7CDBE6B2561EB90006087D2 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,10 @@
 		C7BB0807254921EA007C0608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7BB081925492A4E007C0608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7CDBE482560F908006087D2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C7CDBE4D2561BDFA006087D2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C7CDBE552561C8F7006087D2 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		C7CDBE5E2561CDE8006087D2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		C7CDBE632561DFFD006087D2 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion-ConcussionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion_ConcussionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5939EC118F99CD4B03AC71 /* Pods_Concussion.framework in Frameworks */,
+				C7CDBE6C2561EB90006087D2 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				C70765CD255B42AB00BABF84 /* Lit.swift */,
+				C7CDBE5E2561CDE8006087D2 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 		C7778AE725511125000892B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7CDBE5A2561C90F006087D2 /* Today */,
 				C7CDBE432560C533006087D2 /* At a Glance */,
 				C7778AE925511222000892B8 /* Login.swift */,
 				C7CDBE482560F908006087D2 /* Menu.swift */,
@@ -229,10 +241,20 @@
 			children = (
 				C70765D5255B454100BABF84 /* LitView.swift */,
 				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
-				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
 				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
+				C7CDBE632561DFFD006087D2 /* ActivityView.swift */,
 			);
 			name = "At a Glance";
+			sourceTree = "<group>";
+		};
+		C7CDBE5A2561C90F006087D2 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				C7CDBE4D2561BDFA006087D2 /* MapView.swift */,
+				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
+				C7CDBE552561C8F7006087D2 /* TodayView.swift */,
+			);
+			name = Today;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +275,9 @@
 			dependencies = (
 			);
 			name = Concussion;
+			packageProductDependencies = (
+				C7CDBE6B2561EB90006087D2 /* SwiftUICharts */,
+			);
 			productName = Concussion;
 			productReference = C7BB07E0254921E7007C0608 /* Concussion.app */;
 			productType = "com.apple.product-type.application";
@@ -327,6 +352,9 @@
 				Base,
 			);
 			mainGroup = C7BB07D7254921E7007C0608;
+			packageReferences = (
+				C7CDBE6A2561EB8F006087D2 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = C7BB07E1254921E7007C0608 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,15 +501,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CDBE5F2561CDE8006087D2 /* Activity.swift in Sources */,
 				C70765CE255B42AB00BABF84 /* Lit.swift in Sources */,
 				C7BB07ED254921E9007C0608 /* Persistence.swift in Sources */,
 				C7778AEA25511222000892B8 /* Login.swift in Sources */,
 				C70765C8255B2F8F00BABF84 /* AppointmentView.swift in Sources */,
+				C7CDBE642561DFFD006087D2 /* ActivityView.swift in Sources */,
+				C7CDBE4E2561BDFB006087D2 /* MapView.swift in Sources */,
 				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
 				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
 				C7CDBE492560F908006087D2 /* Menu.swift in Sources */,
 				C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */,
 				C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */,
+				C7CDBE562561C8F7006087D2 /* TodayView.swift in Sources */,
 				C70765DB255B4EE000BABF84 /* GlanceView.swift in Sources */,
 				C7BB07E4254921E7007C0608 /* ConcussionApp.swift in Sources */,
 				C7BB07F0254921E9007C0608 /* Concussion.xcdatamodeld in Sources */,
@@ -810,6 +842,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7CDBE6A2561EB8F006087D2 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7CDBE6B2561EB90006087D2 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7CDBE6A2561EB8F006087D2 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C7BB07EE254921E9007C0608 /* Concussion.xcdatamodeld */ = {

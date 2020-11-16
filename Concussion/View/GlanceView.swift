@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GlanceView: View {
     
+    
     @Binding var showMenu : Bool
     
     let litCards: [Lit]
@@ -23,38 +24,36 @@ struct GlanceView: View {
     var body: some View {
         ZStack {
             NavigationView {
-              List {
-                  LazyVGrid(columns: columns, spacing: 20) {
-                      
-                    AppointmentView(app: appointment)
-                    
-                    ForEach(litCards) { litCard in
-                        if (litCard.id != selection?.id) {
-                          LitCardView(litCard: litCard)
-                            .frame(height: 400)
-                            .onTapGesture { select(litCard) }
-                            .matchedGeometryEffect(id: litCard.id, in: ns)
-                        }
-                        else {
-                          LitCardView(litCard: litCard)
-                            .opacity(0)
-                        }
+                    List {
+                          LazyVGrid(columns: columns, spacing: 20) {
+                                                        
+                            ForEach(litCards) { litCard in
+                                if (litCard.id != selection?.id) {
+                                  LitCardView(litCard: litCard)
+                                    .frame(height: 400)
+                                    .onTapGesture { select(litCard) }
+                                    .matchedGeometryEffect(id: litCard.id, in: ns)
+                                }
+                                else {
+                                  LitCardView(litCard: litCard)
+                                    .opacity(0)
+                                }
+                            }
+                          }
+                          .buttonStyle(PlainButtonStyle())
                     }
-                  }
-                  .buttonStyle(PlainButtonStyle())
-              }
-              .navigationBarTitle("At a Glance")
-              .toolbar(content: {
-                ToolbarItem {
-                    Button(action: {
-                        withAnimation(.default){
-                            self.showMenu.toggle()
-                        }
-                    }, label: {
-                    Image(systemName: "equal.square")
-                  })
-                }
-              })
+                    .navigationBarTitle("At a Glance")
+                    .toolbar(content: {
+                      ToolbarItem {
+                          Button(action: {
+                              withAnimation(.default){
+                                  self.showMenu.toggle()
+                              }
+                          }, label: {
+                          Image(systemName: "equal.square")
+                        })
+                      }
+                    })
             }
             .zIndex(1).blur(radius: self.showMenu ? 10 : 0 )
             
@@ -74,3 +73,5 @@ struct GlanceView: View {
       }
     }
 }
+
+

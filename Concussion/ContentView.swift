@@ -15,10 +15,12 @@ struct ContentView: View {
     var body: some View{
         ZStack{
             TabView {
-                Text("Today View")
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("Today")
+                VStack{
+                    TodayView(showMenu: self.$menu)
+                }
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Today")
                 }
                 
                 GlanceView(showMenu: self.$menu, litCards: testData)
