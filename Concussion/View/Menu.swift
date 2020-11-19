@@ -39,7 +39,7 @@ struct Menu : View {
             
             Button(action: {}, label: {
                 HStack{
-                    Text("Web Resources").font(.title2)
+                    Text("Need more advice?").font(.title2)
                     Image(systemName: "link").font(.title2)
                 }.frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
             }).padding(2)

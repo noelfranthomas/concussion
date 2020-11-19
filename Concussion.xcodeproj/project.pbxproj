@@ -32,6 +32,9 @@
 		C7CDBE5F2561CDE8006087D2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE5E2561CDE8006087D2 /* Activity.swift */; };
 		C7CDBE642561DFFD006087D2 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDBE632561DFFD006087D2 /* ActivityView.swift */; };
 		C7CDBE6C2561EB90006087D2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C7CDBE6B2561EB90006087D2 /* SwiftUICharts */; };
+		C7D4A82E2565EE8F00B6580A /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = C7D4A82D2565EE8F00B6580A /* CardStack */; };
+		C7D4A83B2566043A00B6580A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A83A2566043A00B6580A /* QuestionView.swift */; };
+		C7D4A84325663F9800B6580A /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A84225663F9800B6580A /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,8 @@
 		C7CDBE552561C8F7006087D2 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		C7CDBE5E2561CDE8006087D2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		C7CDBE632561DFFD006087D2 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		C7D4A83A2566043A00B6580A /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		C7D4A84225663F9800B6580A /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		C8C01BCD60BEEB884F6C4DD3 /* Pods_Concussion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06794F38260A6910D3AE154 /* Pods-Concussion-ConcussionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concussion-ConcussionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Concussion-ConcussionUITests/Pods-Concussion-ConcussionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4871DC6FED89E03C38CF772 /* Pods_Concussion_ConcussionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concussion_ConcussionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +102,7 @@
 			files = (
 				7B5939EC118F99CD4B03AC71 /* Pods_Concussion.framework in Frameworks */,
 				C7CDBE6C2561EB90006087D2 /* SwiftUICharts in Frameworks */,
+				C7D4A82E2565EE8F00B6580A /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +248,7 @@
 				C70765D5255B454100BABF84 /* LitView.swift */,
 				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
 				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
-				C7CDBE632561DFFD006087D2 /* ActivityView.swift */,
+				C7D4A84225663F9800B6580A /* CardStackView.swift */,
 			);
 			name = "At a Glance";
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 				C7CDBE4D2561BDFA006087D2 /* MapView.swift */,
 				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
 				C7CDBE552561C8F7006087D2 /* TodayView.swift */,
+				C7D4A83A2566043A00B6580A /* QuestionView.swift */,
+				C7CDBE632561DFFD006087D2 /* ActivityView.swift */,
 			);
 			name = Today;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 			name = Concussion;
 			packageProductDependencies = (
 				C7CDBE6B2561EB90006087D2 /* SwiftUICharts */,
+				C7D4A82D2565EE8F00B6580A /* CardStack */,
 			);
 			productName = Concussion;
 			productReference = C7BB07E0254921E7007C0608 /* Concussion.app */;
@@ -354,6 +363,7 @@
 			mainGroup = C7BB07D7254921E7007C0608;
 			packageReferences = (
 				C7CDBE6A2561EB8F006087D2 /* XCRemoteSwiftPackageReference "ChartView" */,
+				C7D4A82C2565EE8F00B6580A /* XCRemoteSwiftPackageReference "CardStack" */,
 			);
 			productRefGroup = C7BB07E1254921E7007C0608 /* Products */;
 			projectDirPath = "";
@@ -504,12 +514,14 @@
 				C7CDBE5F2561CDE8006087D2 /* Activity.swift in Sources */,
 				C70765CE255B42AB00BABF84 /* Lit.swift in Sources */,
 				C7BB07ED254921E9007C0608 /* Persistence.swift in Sources */,
+				C7D4A84325663F9800B6580A /* CardStackView.swift in Sources */,
 				C7778AEA25511222000892B8 /* Login.swift in Sources */,
 				C70765C8255B2F8F00BABF84 /* AppointmentView.swift in Sources */,
 				C7CDBE642561DFFD006087D2 /* ActivityView.swift in Sources */,
 				C7CDBE4E2561BDFB006087D2 /* MapView.swift in Sources */,
 				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
 				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
+				C7D4A83B2566043A00B6580A /* QuestionView.swift in Sources */,
 				C7CDBE492560F908006087D2 /* Menu.swift in Sources */,
 				C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */,
 				C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */,
@@ -852,6 +864,14 @@
 				minimumVersion = 1.5.4;
 			};
 		};
+		C7D4A82C2565EE8F00B6580A /* XCRemoteSwiftPackageReference "CardStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nhoogendoorn/CardStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -859,6 +879,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C7CDBE6A2561EB8F006087D2 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		C7D4A82D2565EE8F00B6580A /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7D4A82C2565EE8F00B6580A /* XCRemoteSwiftPackageReference "CardStack" */;
+			productName = CardStack;
 		};
 /* End XCSwiftPackageProductDependency section */
 

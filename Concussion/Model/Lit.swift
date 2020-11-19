@@ -7,8 +7,9 @@
 
 import Foundation
 import MapKit
+import CardStack
 
-struct Lit: Codable, Identifiable {
+struct Lit: Codable, Identifiable, CardData {
     var name : String
     var desc : String
     var lit : String
@@ -18,7 +19,9 @@ struct Lit: Codable, Identifiable {
 
 let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-let appointment = "An appointment is scheduled for tomorrow morning with Dr. Appleseed."
+let shortlorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+let appointment = "Appointment tomorrow with Dr. Appleseed."
 
 let region = MKCoordinateRegion(
     center: CLLocationCoordinate2D(
@@ -32,6 +35,13 @@ let region = MKCoordinateRegion(
 )
 
 let testData = [
-    Lit(name: "Next Steps", desc: "Based on your condition, here are the steps we reccommend for a fast recovery:",  lit: lorem, image: "image2"),
-    Lit(name: "What's a Concussion?", desc: "Want to know a little more about what's happening?",  lit: lorem, image: "image1")
+    Lit(name: "What's a Concussion?", desc: "Want to know a little more about what's happening?",  lit: lorem, image: "What's a Concussion?"),
+    Lit(name: "Initial Management", desc: "Here's a bit on how to take care of yourself for the first 24hrs.",  lit: lorem, image: "Initial Management"),
+    Lit(name: "Persistent Symptoms", desc: "Here's a bit on how to take care of yourself for the first 24hrs.",  lit: lorem, image: "Persistent Symptoms")
 ]
+
+let testData2 = [
+    Lit(name: "Management Tips", desc: "Want to know a little more about what's happening?",  lit: lorem, image: "Management Tips"),
+    Lit(name: "Dos and Don'ts", desc: "Here's a bit on how to take care of yourself for the first 24hrs.",  lit: lorem, image: "Dos and Don'ts")
+]
+

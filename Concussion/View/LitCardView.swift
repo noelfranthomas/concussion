@@ -7,8 +7,8 @@
 import SwiftUI
 
 struct LitCardView: View {
-   
-    let litCard: Lit
+    
+    let litcard : Lit
     
     var body: some View {
         VStack {
@@ -25,7 +25,7 @@ struct LitCardView: View {
     }
     
     @ViewBuilder var hero: some View {
-        Image(litCard.image)
+        Image(litcard.image)
           .resizable()
           .aspectRatio(contentMode: .fill)
           .frame(minWidth: 0,
@@ -38,14 +38,14 @@ struct LitCardView: View {
     
     @ViewBuilder var info: some View {
       VStack(alignment: .leading) {
-        Text(litCard.name)
+        Text(litcard.name)
             .font(.title)
             .fontWeight(.bold)
-        Text(litCard.desc)
+        Text(litcard.desc)
             .font(.subheadline)
             .fontWeight(.bold)
             .foregroundColor(Color("primary"))
-        Text(litCard.lit.prefix(200) + "...")
+        Text(litcard.lit.prefix(200) + "...")
           .font(.body)
             .padding(.vertical, 3)
       }

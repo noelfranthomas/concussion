@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CardStack
 
 struct GlanceView: View {
     
@@ -25,23 +26,33 @@ struct GlanceView: View {
         ZStack {
             NavigationView {
                     List {
-                          LazyVGrid(columns: columns, spacing: 20) {
-                                                        
-                            ForEach(litCards) { litCard in
-                                if (litCard.id != selection?.id) {
-                                  LitCardView(litCard: litCard)
-                                    .frame(height: 400)
-                                    .onTapGesture { select(litCard) }
-                                    .matchedGeometryEffect(id: litCard.id, in: ns)
-                                }
-                                else {
-                                  LitCardView(litCard: litCard)
-                                    .opacity(0)
-                                }
-                            }
+                        
+                        VStack{
+                            Text("Returning to").font(.title).fontWeight(.bold)
+                            
+                            StackExampleView()
+                        }.padding(20)
+                                                
+                        Text("Literature").font(.title).fontWeight(.heavy)
+                        
+                        LazyVGrid(columns: columns, spacing: 20) {
+  
+                          ForEach(litCards) { litCard in
+                              
+                              if (litCard.id != selection?.id) {
+                                LitCardView(litcard: litCard)
+                                  .frame(height: 400)
+                                  .onTapGesture { select(litCard) }
+                                  .matchedGeometryEffect(id: litCard.id, in: ns)
+                              }
+                              else {
+                                LitCardView(litcard: litCard)
+                                  .opacity(0)
+                              }
                           }
-                          .buttonStyle(PlainButtonStyle())
+                        }
                     }
+                    .buttonStyle(PlainButtonStyle())
                     .navigationBarTitle("At a Glance")
                     .toolbar(content: {
                       ToolbarItem {

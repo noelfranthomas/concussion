@@ -17,9 +17,7 @@ struct ActivityView: View {
     var body: some View {
         
         VStack{
-            BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Chart 1", style: chartStyle, form: ChartForm.large, dropShadow: false)
-            
-            LineView(data: [8,23,54,32,12,37,7,23,43], title: "Chart 2", style: chartStyle)
+            LineView(data: [8,23,54,32,12,37,7,23,43], title: "Activity", style: chartStyle)
         }
     }
 }
