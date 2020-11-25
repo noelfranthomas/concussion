@@ -20,7 +20,7 @@ struct LitView: View {
       }
       .edgesIgnoringSafeArea(.all)
       .background(Color("bg")
-                    .edgesIgnoringSafeArea(.all))
+      .edgesIgnoringSafeArea(.all))
     }
     
     
@@ -44,10 +44,11 @@ struct LitView: View {
         Text(litCard.desc)
             .font(.subheadline)
             .fontWeight(.bold)
-            .foregroundColor(Color("primary"))
+            .foregroundColor(Color.gray)
         Text(litCard.lit)
             .font(.body)
-            .padding(.vertical, 3)
+            .frame(height: 600, alignment: .top)
+            .padding(.top, 3)
       }
       .padding()
       .foregroundColor(.white)
@@ -56,6 +57,6 @@ struct LitView: View {
 
 struct LitView_Previews: PreviewProvider {
     static var previews: some View {
-        LitView(litCard: testData[0])
+        LitView(litCard: testDataAbout[0]).preferredColorScheme(.dark)
     }
 }

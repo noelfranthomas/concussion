@@ -51,6 +51,13 @@ struct Menu : View {
                 }.frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
             }).padding(2)
             
+            Button(action: {}, label: {
+                HStack{
+                    Text("References").font(.title2)
+                    Image(systemName: "doc.append").font(.title2)
+                }.frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
+            }).padding(2)
+            
             Spacer()
             
             Divider()

@@ -1,14 +1,16 @@
 //
-//  GlanceView.swift
+//  ManageView.swift
 //  Concussion
 //
-//  Created by Noel Thomas on 2020-11-10.
+//  Created by Noel Thomas on 2020-11-23.
 //
+
+import SwiftUI
 
 import SwiftUI
 import CardStack
 
-struct GlanceView: View {
+struct ManageView: View {
     
     
     @Binding var showMenu : Bool
@@ -27,33 +29,27 @@ struct GlanceView: View {
             NavigationView {
                     List {
                         
+                        AppointmentView(app: appointment, region: region)
+                        
+                        HStack{
+                            Text("NOTE:").fontWeight(.heavy)
+                            
+                            Spacer()
+                            
+                            Text("Remember to take your vestibular suppressants.")
+
+                        }.font(.title3).padding(25)
+                        
+                        FollowView().frame(height: 410)
+                        
                         VStack{
                             Text("Returning to").font(.title).fontWeight(.bold)
-    
+                            
                             StackView()
                         }.padding(20)
-                                                
-                        Text("Literature").font(.title).fontWeight(.heavy)
-                        
-                        LazyVGrid(columns: columns, spacing: 20) {
-  
-                          ForEach(litCards) { litCard in
-                              
-                              if (litCard.id != selection?.id) {
-                                LitCardView(litcard: litCard)
-                                  .frame(height: 400)
-                                  .onTapGesture { select(litCard) }
-                                  .matchedGeometryEffect(id: litCard.id, in: ns)
-                              }
-                              else {
-                                LitCardView(litcard: litCard)
-                                  .opacity(0)
-                              }
-                          }
-                        }
                     }
                     .buttonStyle(PlainButtonStyle())
-                    .navigationBarTitle("At a Glance")
+                    .navigationBarTitle("Manage")
                     .toolbar(content: {
                       ToolbarItem {
                           Button(action: {
@@ -84,5 +80,4 @@ struct GlanceView: View {
       }
     }
 }
-
 

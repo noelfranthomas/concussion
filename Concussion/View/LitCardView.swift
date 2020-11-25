@@ -44,9 +44,9 @@ struct LitCardView: View {
         Text(litcard.desc)
             .font(.subheadline)
             .fontWeight(.bold)
-            .foregroundColor(Color("primary"))
-        Text(litcard.lit.prefix(200) + "...")
-          .font(.body)
+            .foregroundColor(Color.gray)
+        Text(litcard.lit)
+            .font(.body)
             .padding(.vertical, 3)
       }
       .padding()

@@ -15,18 +15,23 @@ struct ContentView: View {
     var body: some View{
         ZStack{
             TabView {
-                VStack{
-                    TodayView(showMenu: self.$menu, litCards: testData2)
-                }
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Today")
-                }
                 
-                GlanceView(showMenu: self.$menu, litCards: testData)
+                AboutView(showMenu: self.$menu, litCards: testDataAbout)
                     .tabItem {
-                        Image(systemName: "eyeglasses")
-                        Text("Glance")
+                        Image(systemName: "info.circle")
+                        Text("About")
+                    }
+                
+                ManageView(showMenu: self.$menu, litCards: testDataManage)
+                    .tabItem {
+                        Image(systemName: "text.badge.checkmark")
+                        Text("Manage")
+                    }
+                
+                TrackView(showMenu: self.$menu)
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Track")
                     }
             }.zIndex(1)
             

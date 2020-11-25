@@ -1,13 +1,13 @@
 //
-//  TodayView.swift
+//  AboutView.swift
 //  Concussion
 //
-//  Created by Noel Thomas on 2020-11-15.
+//  Created by Noel Thomas on 2020-11-23.
 //
 
 import SwiftUI
 
-struct TodayView: View {
+struct AboutView: View {
     
     @Binding var showMenu : Bool
     
@@ -20,25 +20,7 @@ struct TodayView: View {
         ZStack {
             NavigationView {
               List {
-                
-                AppointmentView(app: appointment, region: region)
-                                
-                HStack{
-                    Text("NOTE:").fontWeight(.heavy)
-                    
-                    Spacer()
-                    
-                    Text("Remember to take your vestibular suppressants.")
-
-                }.font(.title3).padding(25)
-                                
-                QuestionView(question: "Are you experiencing any headaches today?", image: "head").padding(.vertical, 16)
-                                
-                ActivityView(title: "bob").frame(width: 350, height: 150, alignment: .center).padding(.bottom, 200)
-                
-                VStack{
-                    Text("Our Suggestions").font(.title).fontWeight(.bold)
-                    
+                VStack{                    
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))], spacing: 20) {
 
                       ForEach(litCards) { litCard in
@@ -56,10 +38,9 @@ struct TodayView: View {
                       }
                     }
                 }.padding(.vertical, 16).multilineTextAlignment(.leading)
-                
               }
               .buttonStyle(PlainButtonStyle())
-              .navigationBarTitle("Track")
+              .navigationBarTitle("About")
               .toolbar(content: {
                 ToolbarItem {
                     Button(action: {
@@ -89,5 +70,4 @@ struct TodayView: View {
       }
     }
 }
-
 

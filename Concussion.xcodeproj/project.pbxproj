@@ -15,6 +15,10 @@
 		C70765CE255B42AB00BABF84 /* Lit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765CD255B42AB00BABF84 /* Lit.swift */; };
 		C70765D6255B454100BABF84 /* LitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765D5255B454100BABF84 /* LitView.swift */; };
 		C70765DB255B4EE000BABF84 /* GlanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70765DA255B4EE000BABF84 /* GlanceView.swift */; };
+		C7276F46256C68BD00EA61C7 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F45256C68BD00EA61C7 /* TrackView.swift */; };
+		C7276F4E256C6C8200EA61C7 /* ManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F4D256C6C8200EA61C7 /* ManageView.swift */; };
+		C7276F53256C729100EA61C7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F52256C729100EA61C7 /* AboutView.swift */; };
+		C7276F5E256CD57B00EA61C7 /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F5D256CD57B00EA61C7 /* FollowView.swift */; };
 		C7778AEA25511222000892B8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AE925511222000892B8 /* Login.swift */; };
 		C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AF125511296000892B8 /* LoginViewModel.swift */; };
 		C7BB07E4254921E7007C0608 /* ConcussionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07E3254921E7007C0608 /* ConcussionApp.swift */; };
@@ -64,6 +68,10 @@
 		C70765CD255B42AB00BABF84 /* Lit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lit.swift; sourceTree = "<group>"; };
 		C70765D5255B454100BABF84 /* LitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitView.swift; sourceTree = "<group>"; };
 		C70765DA255B4EE000BABF84 /* GlanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceView.swift; sourceTree = "<group>"; };
+		C7276F45256C68BD00EA61C7 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		C7276F4D256C6C8200EA61C7 /* ManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageView.swift; sourceTree = "<group>"; };
+		C7276F52256C729100EA61C7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C7276F5D256CD57B00EA61C7 /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
 		C7778AE925511222000892B8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C7778AF125511296000892B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C7BB07E0254921E7007C0608 /* Concussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,12 +165,47 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C7276F3C256C646C00EA61C7 /* About Concussions and You */ = {
+			isa = PBXGroup;
+			children = (
+				C7276F52256C729100EA61C7 /* AboutView.swift */,
+			);
+			name = "About Concussions and You";
+			sourceTree = "<group>";
+		};
+		C7276F3D256C648300EA61C7 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				C7CDBE4D2561BDFA006087D2 /* MapView.swift */,
+				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
+				C7D4A84225663F9800B6580A /* CardStackView.swift */,
+				C7276F5D256CD57B00EA61C7 /* FollowView.swift */,
+				C7276F4D256C6C8200EA61C7 /* ManageView.swift */,
+			);
+			name = Manage;
+			sourceTree = "<group>";
+		};
+		C7276F3E256C649300EA61C7 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				C7CDBE632561DFFD006087D2 /* ActivityView.swift */,
+				C7D4A83A2566043A00B6580A /* QuestionView.swift */,
+				C7276F45256C68BD00EA61C7 /* TrackView.swift */,
+			);
+			name = Track;
+			sourceTree = "<group>";
+		};
 		C7778AE725511125000892B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C7CDBE5A2561C90F006087D2 /* Today */,
+				C7276F3C256C646C00EA61C7 /* About Concussions and You */,
+				C7276F3D256C648300EA61C7 /* Manage */,
+				C7276F3E256C649300EA61C7 /* Track */,
 				C7CDBE432560C533006087D2 /* At a Glance */,
+				C7CDBE5A2561C90F006087D2 /* Today */,
 				C7778AE925511222000892B8 /* Login.swift */,
+				C70765D5255B454100BABF84 /* LitView.swift */,
+				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
 				C7CDBE482560F908006087D2 /* Menu.swift */,
 			);
 			path = View;
@@ -245,10 +288,7 @@
 		C7CDBE432560C533006087D2 /* At a Glance */ = {
 			isa = PBXGroup;
 			children = (
-				C70765D5255B454100BABF84 /* LitView.swift */,
-				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
 				C70765DA255B4EE000BABF84 /* GlanceView.swift */,
-				C7D4A84225663F9800B6580A /* CardStackView.swift */,
 			);
 			name = "At a Glance";
 			sourceTree = "<group>";
@@ -256,11 +296,7 @@
 		C7CDBE5A2561C90F006087D2 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				C7CDBE4D2561BDFA006087D2 /* MapView.swift */,
-				C70765C7255B2F8F00BABF84 /* AppointmentView.swift */,
 				C7CDBE552561C8F7006087D2 /* TodayView.swift */,
-				C7D4A83A2566043A00B6580A /* QuestionView.swift */,
-				C7CDBE632561DFFD006087D2 /* ActivityView.swift */,
 			);
 			name = Today;
 			sourceTree = "<group>";
@@ -512,7 +548,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CDBE5F2561CDE8006087D2 /* Activity.swift in Sources */,
+				C7276F53256C729100EA61C7 /* AboutView.swift in Sources */,
 				C70765CE255B42AB00BABF84 /* Lit.swift in Sources */,
+				C7276F5E256CD57B00EA61C7 /* FollowView.swift in Sources */,
 				C7BB07ED254921E9007C0608 /* Persistence.swift in Sources */,
 				C7D4A84325663F9800B6580A /* CardStackView.swift in Sources */,
 				C7778AEA25511222000892B8 /* Login.swift in Sources */,
@@ -522,7 +560,9 @@
 				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
 				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
 				C7D4A83B2566043A00B6580A /* QuestionView.swift in Sources */,
+				C7276F4E256C6C8200EA61C7 /* ManageView.swift in Sources */,
 				C7CDBE492560F908006087D2 /* Menu.swift in Sources */,
+				C7276F46256C68BD00EA61C7 /* TrackView.swift in Sources */,
 				C70765C0255A1FC600BABF84 /* LitCardView.swift in Sources */,
 				C7BB07E6254921E7007C0608 /* ContentView.swift in Sources */,
 				C7CDBE562561C8F7006087D2 /* TodayView.swift in Sources */,
