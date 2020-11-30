@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct Menu : View {
     
     @Binding var showMenu : Bool
     
+    @AppStorage("status") var logged = false
+        
     let menuWidth = UIScreen.main.bounds.width / 1.5
     
     var body: some View{
@@ -56,6 +59,18 @@ struct Menu : View {
                     Text("References").font(.title2)
                     Image(systemName: "doc.append").font(.title2)
                 }.frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
+            }).padding(2)
+            
+            Button(action: {
+                try! Auth.auth().signOut()
+                withAnimation{logged = false}
+            }, label: {
+                HStack{
+                    Text("Log Out")
+                        .font(.title2)
+                    Image(systemName: "person").font(.title2)
+                }
+                .frame(width: menuWidth, height: 40).foregroundColor(.white).background(Color("cellColor").opacity(0.5)).cornerRadius(8)
             }).padding(2)
             
             Spacer()

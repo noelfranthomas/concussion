@@ -70,11 +70,11 @@ struct FollowView: View {
             }.frame(width: 340, height: 100).background(Color("dark")).cornerRadius(8)
         }.padding()
         
-        Button(action:{}, label:{
-            VStack{
-                Text("Physician Summary").fontWeight(.bold).frame(width: 340, height: 40).background(Color("primary")).cornerRadius(8)
-            }.padding(.horizontal).foregroundColor(.white)
-        })
+        NavigationLink(
+                destination: PhysicianView(),
+                label: {
+                    Text("Physician Summary").fontWeight(.bold).frame(width: 340, height: 40).background(Color("primary")).cornerRadius(8).padding(.horizontal).foregroundColor(.white)
+                })
       }
       .frame(minWidth: 0,
              maxWidth: .infinity,

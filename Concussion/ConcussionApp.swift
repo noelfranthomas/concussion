@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct ConcussionApp: App {
+struct Concussion: App {
     
     @UIApplicationDelegateAdaptor(Delegate.self) var delegate
     
@@ -20,13 +20,13 @@ struct ConcussionApp: App {
     }
 }
 
-
 //Init Firebase
 
-class Delegate : NSObject, UIApplicationDelegate{
+class Delegate : NSObject,UIApplicationDelegate{
     
-    func application (_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-                
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        FirebaseApp.configure()
         return true
     }
 }

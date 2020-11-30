@@ -17,10 +17,7 @@ struct ActivityView: View {
 
     
     var body: some View {
-        
-        VStack{
-            MultiLineChartView(data: [([8,32,100,5,100,28,30], GradientColors.orange), ([20,50,10,80,70,60,77,50], GradientColors.blue)], title: "Activity", form: ChartForm.large)
-        }
+        MultiLineChartView(data: [([8,32,100,5,100,28,30], GradientColors.orange), ([20,50,10,80,70,60,77,50], GradientColors.blue)], title: "Activity", form: ChartForm.large)
     }
 }
 

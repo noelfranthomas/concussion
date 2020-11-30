@@ -19,6 +19,7 @@
 		C7276F4E256C6C8200EA61C7 /* ManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F4D256C6C8200EA61C7 /* ManageView.swift */; };
 		C7276F53256C729100EA61C7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F52256C729100EA61C7 /* AboutView.swift */; };
 		C7276F5E256CD57B00EA61C7 /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7276F5D256CD57B00EA61C7 /* FollowView.swift */; };
+		C741FEDF256E3B0B0072300D /* PhysicianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741FEDE256E3B0B0072300D /* PhysicianView.swift */; };
 		C7778AEA25511222000892B8 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AE925511222000892B8 /* Login.swift */; };
 		C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7778AF125511296000892B8 /* LoginViewModel.swift */; };
 		C7BB07E4254921E7007C0608 /* ConcussionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB07E3254921E7007C0608 /* ConcussionApp.swift */; };
@@ -72,6 +73,7 @@
 		C7276F4D256C6C8200EA61C7 /* ManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageView.swift; sourceTree = "<group>"; };
 		C7276F52256C729100EA61C7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C7276F5D256CD57B00EA61C7 /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		C741FEDE256E3B0B0072300D /* PhysicianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicianView.swift; sourceTree = "<group>"; };
 		C7778AE925511222000892B8 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C7778AF125511296000892B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C7BB07E0254921E7007C0608 /* Concussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,9 +206,11 @@
 				C7CDBE432560C533006087D2 /* At a Glance */,
 				C7CDBE5A2561C90F006087D2 /* Today */,
 				C7778AE925511222000892B8 /* Login.swift */,
+				C7778AF125511296000892B8 /* LoginViewModel.swift */,
 				C70765D5255B454100BABF84 /* LitView.swift */,
 				C70765BF255A1FC600BABF84 /* LitCardView.swift */,
 				C7CDBE482560F908006087D2 /* Menu.swift */,
+				C741FEDE256E3B0B0072300D /* PhysicianView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,7 +218,6 @@
 		C7778AE825511137000892B8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C7778AF125511296000892B8 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				C7CDBE4E2561BDFB006087D2 /* MapView.swift in Sources */,
 				C70765D6255B454100BABF84 /* LitView.swift in Sources */,
 				C7778AF225511296000892B8 /* LoginViewModel.swift in Sources */,
+				C741FEDF256E3B0B0072300D /* PhysicianView.swift in Sources */,
 				C7D4A83B2566043A00B6580A /* QuestionView.swift in Sources */,
 				C7276F4E256C6C8200EA61C7 /* ManageView.swift in Sources */,
 				C7CDBE492560F908006087D2 /* Menu.swift in Sources */,

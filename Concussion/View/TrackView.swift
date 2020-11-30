@@ -20,7 +20,7 @@ struct TrackView: View {
               List {
                 QuestionView(question: "Are you experiencing any headaches today?", image: "head").padding(.vertical, 16)
                 
-                ActivityView(title: "Physical Activity").frame(width: 370, alignment: .center).padding(.bottom, 30)
+                ActivityView(title: "Activity").frame(width: 370, alignment: .center).padding(.bottom, 30)
                 
                 HStack{
                     Spacer()
